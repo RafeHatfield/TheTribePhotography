@@ -1,0 +1,3 @@
+= The Tribe Photography =
+
+Working repository for a simple site focussed on photography.  It features a basic CMS and paperclip for image manipulation.
