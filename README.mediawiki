@@ -1,5 +1,5 @@
 = The Tribe Photography =
 
-== http://www.thetribephotography.com
+== http://www.thetribephotography.com ==
 
 Working repository for a simple site focussed on photography.  It features a basic CMS and paperclip for image manipulation.  Current committed version only includes the temporary splash page.
