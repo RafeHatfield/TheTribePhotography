@@ -1,0 +1,88 @@
+<!-- Start Home -->
+<div id="home" class="clearfix">
+
+  <!-- Start Welcome -->
+  <div class="welcome">
+    <%= t('.home_welcome1', :default => 'Hello & Welcome to <span class="color">The Tribe Photography</span>!') %><br>
+    <%= t('.home_welcome2', :default => '<span class="color">The Tribe Photography</span> specializes in family and professional portraits.') %>
+  </div>
+  <!-- End Welcome -->
+
+  <div class="divider"></div>
+    
+    <!-- Start Slider -->
+    <div id="slider">
+      
+      <!-- Start Slider Content -->
+      <div id="slider-content">
+        <a href="#"><%= image_tag "example/slider1.jpg" %></a>
+        <a href="#"><%= image_tag "example/slider2.jpg" %></a>
+        <a href="#"><%= image_tag "example/slider3.jpg" %></a>
+        <a href="#"><%= image_tag "example/slider4.jpg" %></a>   
+      </div>
+      <!-- End Slider Content -->
+      
+      <script>
+        $(document).ready(function(){
+          $('#slider-content').coinslider({ 
+              width: 650, // width of slider panel
+              height: 300, // height of slider panel
+              spw: 7, // squares per width
+              sph: 5, // squares per height
+              delay: 3000, // delay between images in ms
+              sDelay: 30, // delay beetwen squares in ms
+              opacity: 0.7, // opacity of title and navigation
+              titleSpeed: 500, // speed of title appereance in ms
+              effect: '', // random, swirl, rain, straight
+              navigation: true, // prev next and buttons
+              links : true, // show images as links
+              hoverPause: true // pause on hover
+          });
+        });
+      </script>
+    
+      <div class="image-bg"></div>
+      
+    </div>
+    <!-- End Slider -->
+
+    
+    <!-- Start About Me -->
+    <div class="about-me">
+    	<!-- Start About Me -->
+				<%= image_tag("example/about-me.jpg", :class => "image right", :alt => "image") %>
+        <!-- <img src="example/about-me.jpg" alt="imge" class="image right" /> -->
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices in elementum massa faucibus. Nullam tempor ligula ut lorem rutrum ut rutrum ligula tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><!-- End About Me -->
+    </div>
+    <!-- End About Me -->
+                
+   <div class="one-col clearfix">
+        <!-- Start Column -->
+        <div class="one-third">
+            <!-- Start Mi Skills -->
+            <h2>My Skills</h2>
+            <div class="skills">
+                <p>Photoshop</p>
+                <div style="width:90%">90%</div>
+                <p>HTML</p>
+                <div style="width:50%">50%</div>
+                <p>CSS</p>
+                <div style="width:85%">85%</div>
+
+            </div><!--End Mi Skills -->
+        </div><!-- End Column -->
+        
+        <div class="two-one last">
+            <h2>Recent Work</h2>
+            <ul class="recent">
+                <li class="image"><%= image_tag "example/recent1.jpg" %><a href="example/view.jpg" class="link" rel="pretty">View</a></li>
+                <li class="image"><%= image_tag "example/recent2.jpg" %><a href="example/view.jpg" class="link" rel="pretty">View</a></li>
+                <li class="image last"><%= image_tag "example/recent3.jpg" %><a href="example/view.jpg" class="link" rel="pretty">View</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+</div>
+<!-- End Home -->

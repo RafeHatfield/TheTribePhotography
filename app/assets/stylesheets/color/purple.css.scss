@@ -1,0 +1,26 @@
+a,
+#menu a:hover,
+#menu a.active,
+.color,
+.bt:hover,
+.nav a:hover,
+.nav a.active,
+h2.title a:hover{color: #8B5EB5;}
+
+blockquote p{border-left:3px solid #8B5EB5;}
+
+a:hover{color: #60407e;}
+
+.bt{
+	background-color:#8B5EB5;
+	border-bottom:2px solid #7a539f;
+}
+.bt:hover{
+	background-color:#7a539f;
+	color:#fff;
+}
+
+.skills div{
+	text-shadow:1px 1px #412861;
+	background:url(../../images/skills/skills-purple.png) no-repeat left;
+}

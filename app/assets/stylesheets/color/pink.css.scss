@@ -1,0 +1,26 @@
+a,
+#menu a:hover,
+#menu a.active,
+.color,
+.bt:hover,
+.nav a:hover,
+.nav a.active,
+h2.title a:hover{color: #C27CBD;}
+
+blockquote p{border-left:3px solid #C27CBD;}
+
+a:hover{color: #7a4977;}
+
+.bt{
+	background-color:#C27CBD;
+	border-bottom:2px solid #ab6da7;
+}
+.bt:hover{
+	background-color:#ab6da7;
+	color:#fff;
+}
+
+.skills div{
+	text-shadow:1px 1px #684265;
+	background:url(../../images/skills/skills-pink.png) no-repeat left;
+}

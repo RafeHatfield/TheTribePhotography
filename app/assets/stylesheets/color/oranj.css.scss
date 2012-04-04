@@ -1,0 +1,26 @@
+a,
+#menu a:hover,
+#menu a.active,
+.color,
+.bt:hover,
+.nav a:hover,
+.nav a.active,
+h2.title a:hover{color: #ff7800;}
+
+blockquote p{border-left:3px solid #ff7800;}
+
+a:hover{color: #c86003;}
+
+.bt{
+	background-color:#ff7800;
+	border-bottom:2px solid #e96e01;
+}
+.bt:hover{
+	background-color:#e96e01;
+	color:#fff;
+}
+
+.skills div{
+	text-shadow:1px 1px #b05402;
+	background:url(../../images/skills/skills-oranj.png) no-repeat left;
+}

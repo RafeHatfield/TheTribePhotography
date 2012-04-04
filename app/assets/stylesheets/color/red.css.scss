@@ -1,0 +1,26 @@
+a,
+#menu a:hover,
+#menu a.active,
+.color,
+.bt:hover,
+.nav a:hover,
+.nav a.active,
+h2.title a:hover{color: #d15541;}
+
+blockquote p{border-left:3px solid #d15541;}
+
+a:hover{color: #74291d;}
+
+.bt{
+	background-color:#d15541;
+	border-bottom:2px solid #be4e3c;
+}
+.bt:hover{
+	background-color:#bc4e3c;
+	color:#fff;
+}
+
+.skills div{
+	text-shadow:1px 1px #7c1811;
+	background:image-url("skills/skills-red.png") no-repeat left;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The Tribe Photography</title>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Oswald' rel='stylesheet' type='text/css' />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+    
+  <script type="text/javascript">
+	  $(document).ready(function(){ 		
+		//Tetimonials
+		$('.testimonials .content').quovolver();
+		
+		//Portfolio
+		$('#selecter').mobilyselect({
+						collection: 'all',
+						animation: 'fade',
+						duration: 750
+					});
+		
+		});
+	</script>
+    
+</head>
+<body>
+
+    <!-- Start Sidebar -->
+    <div id="sidebar">
+    
+    	<!-- Start Logo -->
+        <a href="./" id="logo"><%= image_tag "logosplash.png" %></a><!-- End Logo -->
+           
+        <div class="sidebar-divider"></div>
+        
+        <!-- Start Menu -->
+        <ul id="menu">
+        	<li><a href="#home" class="active scrol">Home</a></li>
+            <li><a href="#about" class="scrol">About</a></li>
+            <li><a href="#portfolio" class="scrol">Portfolio</a></li>
+            <li><a href="./blog.html">+ Blog</a></li>
+            <li><a href="#contact"  class="scrol">Contact</a></li>
+            <li><a href="./shortcodes.html">+ Shortcodes</a></li>
+        </ul><!-- End Menu -->  
+        <div class="sidebar-divider"></div>
+        <!-- Start Footer --> 
+        <div id="footer">
+        	
+        	<!-- Start Social -->
+        	<ul class="social">
+             	<li><a href="#" class="facebook" rel="tipsy" title="Facebook">Facebook</a></li>
+                <li><a href="#" class="twitter"  rel="tipsy" title="Twitter">Twitter</a></li>
+                <li><a href="#" class="skype"  rel="tipsy" title="Skype">Skype</a></li>
+                <li><a href="#" class="vimeo"  rel="tipsy" title="Vimeo">Vimeo</a></li>
+             </ul><!-- End Social -->
+             
+             <div class="clear"></div>
+             
+             <!-- Start Copyright -->
+			<p>Copyright 2011. All rights reserved.</p><!-- End Copyright -->
+            
+        </div><!-- End Footer -->
+        
+    </div><!-- End Sidebar -->
+    
+    <!-- Start Content -->
+    <div id="content">
+    
+			<%= yield %>
+        
+    </div><!-- End Content --> 
+
+     
+</body>
+</html>
