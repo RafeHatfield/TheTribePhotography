@@ -25,4 +25,4 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
-gem 'copycopter_client', '2.0.0'
+gem 'copycopter_client', '2.0.1'
