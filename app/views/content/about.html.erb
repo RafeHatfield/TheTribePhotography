@@ -2,7 +2,7 @@
 <div id="about" class="clearfix">
 
 	<!-- Start Header Text -->
-	<h1 class="header-text">About <span>Lorem ipsum dolor sit amet, consectetur.</span></h1><!-- End Header Text -->
+	<h1 class="header-text"><%= t('.about_page_title', :default => 'About') %> <span><%= t('.about_page_title_trailer', :default => 'Lorem ipsum dolor sit amet, consectetur.') %></span></h1><!-- End Header Text -->
     
 	<div class="divider"></div>
     
@@ -11,9 +11,9 @@
     	<!-- Start About Me -->
 				<%= image_tag("example/about.jpg", :class => "image left") %>
         <!-- <img src="example/about.jpg" alt="imge" class="image left" /> -->
-        <h2>Who We Are?</h2>
-        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam mauris ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices in elementum massa faucibus.</p>
+        <h2><%= t('.about_blurb_title', :default => 'Who We Are?') %></h2>
+        <p class="intro"><%= t('.about_blurb_intro', :default => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam mauris ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus.') %></p>
+        <p><%= t('.about_blurb', :default => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices in elementum massa faucibus.') %></p>
         <a href="#portfolio" class="bt scrol">View Portfolio</a> - or -<a href="#contact" class="bt scrol">Get In Touch</a><!-- End About Me -->
     </div><!-- End Columns --> 
        
@@ -22,29 +22,26 @@
     <!-- Start Services -->
     <div class="services clearfix">
         <div class="one-third">
-					<% image_tag("icon/icon1.png", :class => "left") %>
-        	<!-- <img src="images/icon/icon1.png" alt="Image" class="left" /> -->
-            <h3>Web Design</h3>
-            <p class="intro">Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque et aliquet risus. Pellentesque iaculis </p>
-            <a href="#" class="bt">Read More</a>
+					<%= image_tag("icon/icon1.png", :class => "left") %>
+	        <h3><%= t('.skill1_title', :default => 'Portraits & Family') %></h3>
+	        <p class="intro"><%= t('.skill1_intro', :default => 'Lorem ipsum dolor sit amet') %></p>
+	        <p><%= t('.skill1_blurb', :default => 'Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque et aliquet risus. Pellentesque iaculis') %> </p>
+	        <a href="#" class="bt">Read More</a>
         </div>
         
         <div class="one-third">
-					<% image_tag("icon/icon2.png", :class => "left") %>
-					<!-- <img src="images/icon/icon2.png" alt="Image" class="left" /> -->
-            <h3>Web Development</h3>
-            <p class="intro">Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque et aliquet risus. Pellentesque iaculis </p>
+					<%= image_tag("icon/icon2.png", :class => "left") %>
+            <h3><%= t('.skill2_title', :default => 'Products') %></h3>
+            <p class="intro"><%= t('.skill2_intro', :default => 'Lorem ipsum dolor sit amet') %></p>
+            <p><%= t('.skill2_blurb', :default => 'Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque et aliquet risus. Pellentesque iaculis') %> </p>
             <a href="#" class="bt">Read More</a>
         </div>
         
         <div class="one-third last">
-					<% image_tag("icon/icon3.png", :class => "left") %>
-        	<!-- <img src="images/icon/icon3.png" alt="Image" class="left" /> -->
-            <h3>Print Design</h3>
-            <p class="intro">Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque et aliquet risus. Pellentesque iaculis </p>
+					<%= image_tag("icon/icon3.png", :class => "left") %>
+            <h3><%= t('.skill3_title', :default => 'Property') %></h3>
+            <p class="intro"><%= t('.skill3_intro', :default => 'Lorem ipsum dolor sit amet') %></p>
+            <p><%= t('.skill3_blurb', :default => 'Lorem ipsum dolor sit amet, adipiscing elit. Pellentesque et aliquet risus. Pellentesque iaculis') %></p>
             <a href="#" class="bt">Read More</a>
         </div>
     </div><!-- End Services -->
