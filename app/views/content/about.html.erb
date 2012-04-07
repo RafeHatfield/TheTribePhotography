@@ -10,7 +10,6 @@
     <div class="one-col clearfix">
     	<!-- Start About Me -->
 				<%= image_tag("example/about.jpg", :class => "image left") %>
-        <!-- <img src="example/about.jpg" alt="imge" class="image left" /> -->
         <h2><%= t('.about_blurb_title', :default => 'Who We Are?') %></h2>
         <p class="intro"><%= t('.about_blurb_intro', :default => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam mauris ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus.') %></p>
         <p><%= t('.about_blurb', :default => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices in elementum massa faucibus.') %></p>
@@ -51,18 +50,18 @@
     <!-- Start Testimonials -->
     <div class="testimonials" id="quote_wrap">
     	<div class="content">
-        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices.
-            <div class="info"><a href="#">John Doe</a> - Flash Developer.</div>
+				<%= t('.testimonial1', :default => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices.
+      		<div class="info"><a href="#">John Doe</a> - Flash Developer.</div>') %>
         </div>
         
         <div class="content">
-        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus.
-            <div class="info"><a href="#">John Doe</a> - Flash Developer.</div>
+					<%= t('.testimonial2', :default => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus.
+	      		<div class="info"><a href="#">John Doe</a> - Flash Developer.</div>') %>
         </div>
         
         <div class="content">
-        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <div class="info"><a href="#">John Doe</a> - Flash Developer.</div>
+					<%= t('.testimonial3', :default => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam mauris, ornare sed euismod non, dictum sed diam. Vivamus ut tortor nisl, id tincidunt tellus. Mauris aliquet fermentum eros, eu imperdiet ante sollicitudin id. Suspendisse potenti. Maecenas tempor sem sit amet eros ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	      		<div class="info"><a href="#">John Doe</a> - Flash Developer.</div>') %>
         </div>
     </div><!-- End Testimonials -->
 </div><!-- End About -->
