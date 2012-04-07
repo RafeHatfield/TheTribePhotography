@@ -2,8 +2,8 @@
 <div id="contact" class="clearfix">
 
 	<!-- Start Header Text -->
-	<h1 class="header-text">Contact <span>Lorem ipsum dolor sit amet, consectetur.</span></h1><!-- End Header Text -->
-    
+	<h1 class="header-text"><%= t('.contact_page_title', :default => 'Contact') %> <span><%= t('.contact_page_title_trailer', :default => 'Lorem ipsum dolor sit amet, consectetur.') %></span></h1><!-- End Header Text -->
+
     <div class="divider"></div>
     
     <div class="contact clearfix">
@@ -11,7 +11,7 @@
     	<!-- Start Column -->
     	<div class="two-one">
         	<!-- Start Contact Form -->
-        	<h2>Leave a Reply</h2>
+        	<h2><%= t('.contact_form_title', :default => 'Need more information?') %></h2>
             <form action="mail.php" method="post" id="contact-form">
             	<p><span>Name:</span><input type="text" name="name" value=""></p>
                 <p><span>Email:</span><input type="text" name="email" value=""></p>
@@ -19,13 +19,13 @@
                 <p><textarea name="message" cols="" rows="5"></textarea> </p>
                 <p><input name="" type="submit" value="Submit" class="bt"></p>
     	    </form>
-            <!-- End Contact Form -->
+          <!-- End Contact Form -->
         </div><!-- End Column  -->
         
         <!-- Start Column -->
         <div class="one-third last">
         	<!-- Start Address -->
-        	<h2>Contact Information</h2>
+        	<h2><%= t('.contact_details', :default => 'Contact Details') %></h2>
             <ul class="address">
                 <li><span>Office:</span>26 Street, Los Angeles</li>
                 <li><span>Phone: </span>(000) - 987654321</li>
