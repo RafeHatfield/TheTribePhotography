@@ -2,8 +2,8 @@
 <div id="portfolio" class="clearfix">
 
 	<!-- Start Header Text -->
-	<h1 class="header-text">Portfolio <span>Lorem ipsum dolor sit amet, consectetur.</span></h1><!-- End Header Text -->
-    
+	<h1 class="header-text"><%= t('.gallery_page_title', :default => 'Gallery') %> <span><%= t('.gallery_page_title_trailer', :default => 'Lorem ipsum dolor sit amet, consectetur.') %></span></h1><!-- End Header Text -->
+	
 	<div class="divider"></div>
     
     <!-- Start Portfolio Content -->
@@ -11,14 +11,14 @@
     
         <!-- Start Filter in Categorie -->
         <div class="filter clearfix">
-            <div class="selecterBtns">
-                <ul class="nolist">
-                    <li><a href="#" rel="all" class="active">All</a></li>
-                    <li><a href="#" rel="web-design">Web Design</a></li>
-                    <li><a href="#" rel="print">Print</a></li>
-                    <li><a href="#" rel="logo">Logo</a></li>
-                </ul>
-            </div>
+	        <div class="selecterBtns">
+	          <ul class="nolist">
+	            <li><a href="#" rel="all" class="active">All</a></li>
+	            <li><a href="#" rel="web-design">Web Design</a></li>
+	            <li><a href="#" rel="print">Print</a></li>
+	            <li><a href="#" rel="logo">Logo</a></li>
+	          </ul>
+	        </div>
         </div><!-- End Filter in Categorie -->
         
         <div class="clear"></div>
@@ -28,10 +28,10 @@
         	<li class="one-third web-design">
             	<div class="image">
 									<%= image_tag "example/portfolio1.jpg" %>
-                    <div class="pattern"></div>
-                    <a href="example/view.jpg" class="link" rel="pretty">View</a>
+                  <div class="pattern"></div>
+                  <a href="example/view.jpg" class="link" rel="pretty">View</a>
                 </div>
-            </li>
+           </li>
             
             <li class="one-third print">
             	<div class="image">
