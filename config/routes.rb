@@ -1,4 +1,6 @@
 TribePhotography::Application.routes.draw do
+  resources :articles
+
   get "content/home"
   get "content/contact"
   get "content/about"
