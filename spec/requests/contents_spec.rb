@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe "contents" do
 
+  let(:base_title) { "The Tribe Photography" }
+
   describe "Home page" do
 
     it "should have the h1 'The Tribe Photography'" do
@@ -12,7 +14,7 @@ describe "contents" do
     it "should have the title 'Home'" do
       visit '/content/home'
       page.should have_selector('title',
-                        :text => "The Tribe Photography | Home")
+                        :text => "#{base_title} | Home")
     end
   end
 
@@ -26,7 +28,7 @@ describe "contents" do
     it "should have the title 'Contact'" do
       visit '/content/contact'
       page.should have_selector('title',
-                        :text => "The Tribe Photography | Contact")
+                        :text => "#{base_title} | Contact")
     end
   end
 
@@ -40,7 +42,7 @@ describe "contents" do
     it "should have the title 'About Us'" do
       visit '/content/about'
       page.should have_selector('title',
-                    :text => "The Tribe Photography | About")
+                    :text => "#{base_title} | About")
     end
   end
   
@@ -54,7 +56,7 @@ describe "contents" do
     it "should have the title 'Gallery'" do
       visit '/content/gallery'
       page.should have_selector('title',
-                    :text => "The Tribe Photography | Gallery")
+                    :text => "#{base_title} | Gallery")
     end
   end
 

@@ -119,6 +119,7 @@ GEM
       ffi (~> 1.0)
       multi_json (~> 1.0)
       rubyzip
+    spork (0.9.0)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -148,5 +149,6 @@ DEPENDENCIES
   rails (= 3.2.3)
   rspec-rails (= 2.9.0)
   sass-rails (= 3.2.4)
+  spork (= 0.9.0)
   sqlite3
   uglifier (= 1.2.3)
