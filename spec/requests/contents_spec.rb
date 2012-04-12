@@ -6,7 +6,7 @@ describe "contents" do
 
     it "should have the h1 'The Tribe Photography'" do
       visit '/content/home'
-      page.should have_selector('h1', :text => 'The Tribe Photography')
+      page.should have_selector('span', :text => 'The Tribe Photography')
     end
 
     it "should have the title 'Home'" do
@@ -34,13 +34,28 @@ describe "contents" do
 
     it "should have the h1 'About'" do
       visit '/content/about'
-      page.should have_selector('h1', :text => 'About Us')
+      page.should have_selector('h1', :text => 'About')
     end
 
     it "should have the title 'About Us'" do
       visit '/content/about'
       page.should have_selector('title',
-                    :text => "The Tribe Photography | About Us")
+                    :text => "The Tribe Photography | About")
     end
   end
+  
+  describe "Gallery page" do
+
+    it "should have the h1 'Gallery'" do
+      visit '/content/gallery'
+      page.should have_selector('h1', :text => 'Gallery')
+    end
+
+    it "should have the title 'Gallery'" do
+      visit '/content/gallery'
+      page.should have_selector('title',
+                    :text => "The Tribe Photography | Gallery")
+    end
+  end
+
 end
