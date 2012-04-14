@@ -11,10 +11,15 @@ describe "contents" do
       page.should have_selector('span', :text => 'The Tribe Photography')
     end
 
-    it "should have the title 'Home'" do
+    it "should have the base title" do
       visit '/content/home'
       page.should have_selector('title',
-                        :text => "#{base_title} | Home")
+                        :text => "#{base_title}")
+    end
+
+    it "should not have a custom page title" do
+      visit '/content/home'
+      page.should_not have_selector('title', :text => '| Home')
     end
   end
 
