@@ -1,8 +1,13 @@
 TribePhotography::Application.routes.draw do
-  get "content/home"
-  get "content/contact"
-  get "content/about"
-  get "content/gallery"
+  # get "content/home"
+  # get "content/contact"
+  # get "content/about"
+  # get "content/gallery"
+  # match '/', to: 'content#home'
+  match '/home',    to: 'content#home'
+  match '/about',    to: 'content#about'
+  match '/gallery',   to: 'content#gallery'
+  match '/contact', to: 'content#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

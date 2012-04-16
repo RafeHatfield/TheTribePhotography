@@ -7,18 +7,18 @@ describe "contents" do
   describe "Home page" do
 
     it "should have the h1 'The Tribe Photography'" do
-      visit '/content/home'
+      visit home_path
       page.should have_selector('span', :text => 'The Tribe Photography')
     end
 
     it "should have the base title" do
-      visit '/content/home'
+      visit home_path
       page.should have_selector('title',
                         :text => "#{base_title}")
     end
 
     it "should not have a custom page title" do
-      visit '/content/home'
+      visit home_path
       page.should_not have_selector('title', :text => '| Home')
     end
   end
@@ -26,12 +26,12 @@ describe "contents" do
   describe "contact page" do
 
     it "should have the h1 'Contact'" do
-      visit '/content/contact'
+      visit contact_path
       page.should have_selector('h1', :text => 'Contact')
     end
 
     it "should have the title 'Contact'" do
-      visit '/content/contact'
+      visit contact_path
       page.should have_selector('title',
                         :text => "#{base_title} | Contact")
     end
@@ -40,12 +40,12 @@ describe "contents" do
   describe "About page" do
 
     it "should have the h1 'About'" do
-      visit '/content/about'
+      visit about_path
       page.should have_selector('h1', :text => 'About')
     end
 
     it "should have the title 'About Us'" do
-      visit '/content/about'
+      visit about_path
       page.should have_selector('title',
                     :text => "#{base_title} | About")
     end
@@ -54,15 +54,14 @@ describe "contents" do
   describe "Gallery page" do
 
     it "should have the h1 'Gallery'" do
-      visit '/content/gallery'
+      visit gallery_path
       page.should have_selector('h1', :text => 'Gallery')
     end
 
     it "should have the title 'Gallery'" do
-      visit '/content/gallery'
+      visit gallery_path
       page.should have_selector('title',
                     :text => "#{base_title} | Gallery")
     end
   end
-
 end
