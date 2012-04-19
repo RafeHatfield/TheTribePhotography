@@ -1,8 +1,8 @@
 <ul id="menu">
-	<li><a href="/content/home" class="active scrol">Home</a></li>
-    <li><a href="/content/about" class="scrol">About</a></li>
-    <li><a href="/content/gallery" class="scrol">Gallery</a></li>
-    <li><a href="#" title="Coming Soon!">+ Blog</a></li>
-    <li><a href="/content/contact"  class="scrol">Contact</a></li>
-    <!--- <li><a href="./shortcodes.html">+ Shortcodes</a></li> --->
+	<li><%= link_to "Home", home_path, :class => 'scrol active' %></li>
+	<li><%= link_to "About", about_path, :class => 'scrol' %></li>
+	<li><%= link_to "Gallery", gallery_path, :class => 'scrol' %></li>
+	<li><a href="#" title="Coming Soon!">+ Blog</a></li>
+	<li><%= link_to "Contact", contact_path, :class => 'scrol' %></li>
+  <!--- <li><a href="./shortcodes.html">+ Shortcodes</a></li> --->
 </ul>
