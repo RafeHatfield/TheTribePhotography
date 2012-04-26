@@ -5,6 +5,18 @@ describe "contents" do
   let(:base_title) { "The Tribe Photography" }
   subject { page }
 
+  it "should have the right links on the layout" do
+    visit home_path
+    click_link "About"
+    page.should have_selector 'title', text: full_title('About')
+    click_link "Contact"
+    page.should have_selector 'title', text: full_title('Contact')
+    click_link "Gallery"
+    page.should have_selector 'title', text: full_title('Gallery')
+    click_link "Home"
+    page.should have_selector 'title', text: full_title('')
+  end
+  
   shared_examples_for "all standard pages" do
     it { should have_selector('h1',    text: heading) }
     it { should have_selector('title', text: full_title(page_title)) }
