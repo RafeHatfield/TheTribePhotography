@@ -1,4 +1,6 @@
 TribePhotography::Application.routes.draw do
+  get "users/new"
+
   # get "content/home"
   # get "content/contact"
   # get "content/about"
