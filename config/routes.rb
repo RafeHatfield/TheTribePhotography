@@ -1,5 +1,5 @@
 TribePhotography::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   # get "content/home"
   # get "content/contact"

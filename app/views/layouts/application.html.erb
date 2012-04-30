@@ -49,12 +49,19 @@
 		</div>
 		<!-- End Footer -->
 
-	</div><!-- End Sidebar -->
+	</div>
+	<!-- End Sidebar -->
 
 	<!-- Start Content -->
 	<div id="content">
 		<%= yield %>
+		
+		<div style="clear:both">
+	  	<%= debug(params) if Rails.env.development? %>
+		</div>
 	</div>
 	<!-- End Content -->  
+	
+	
 </body>
 </html>
