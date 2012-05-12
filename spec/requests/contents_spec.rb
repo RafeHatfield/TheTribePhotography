@@ -6,7 +6,7 @@ describe "contents" do
   subject { page }
 
   it "should have the right links on the layout" do
-    visit home_path
+    visit root_path
     click_link "About"
     page.should have_selector 'title', text: full_title('About')
     click_link "Contact"
@@ -24,7 +24,7 @@ describe "contents" do
 
   describe "Home page" do
     
-    before { visit home_path }
+    before { visit root_path }
 
     it { should have_selector('span', :text => 'The Tribe Photography') }
     it { should have_selector('title', :text => full_title('')) }

@@ -7,11 +7,12 @@ TribePhotography::Application.routes.draw do
   # get "content/about"
   # get "content/gallery"
   # match '/', to: 'content#home'
+  root to: 'content#home'
+  
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
 
-  match '/home',    to: 'content#home'
   match '/about',    to: 'content#about'
   match '/gallery',   to: 'content#gallery'
   match '/contact', to: 'content#contact'
