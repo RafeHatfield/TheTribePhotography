@@ -1,5 +1,6 @@
 TribePhotography::Application.routes.draw do
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   # get "content/home"
   # get "content/contact"
@@ -7,6 +8,8 @@ TribePhotography::Application.routes.draw do
   # get "content/gallery"
   # match '/', to: 'content#home'
   match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
   match '/home',    to: 'content#home'
   match '/about',    to: 'content#about'
